@@ -1,28 +1,81 @@
 /* Use this file to use your own styles*/
 
+/* ------ FONTS ------
+font-family: 'Lexend Tera', sans-serif;
+font-family: 'Montserrat', sans-serif;
+--------------------- */
+
+/* ------ COLORS ------
+ #400909
+ #731212
+ #D97373
+ #F24C3D
+ #F28972
+---------------------- */
+
 /* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Styles for the body */
 
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #202030;
-	background-color: #f8f8fc;
+	font-family: 'Montserrat', sans-serif;
+	color: #400909;
+	/* background-color: #D97373;*/
+	background-image: linear-gradient(#D97373, white);
+}
+
+/* Styles for the header */
+h1 {
+	font-family: 'Lexend Tera', sans-serif;
+	font-size: 60px;
+	color: #731212;
+	text-shadow: 5px 5px #D97373;
+	text-transform: uppercase;
+
+}
+
+h2 {
+	font-family: 'Lexend Tera', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #731212;
+	
+}
+
+/* Styles for hyperlinks */
+a:link {
+color: #D97373;
+}
+
+a:visited {
+color: #731212;
+}
+
+a:hover {
+color: #400909;
+text-shadow: 2px 2px 2px #D97373;
+}
+
+footer {
+	background-color: #400909;
 }
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
 
 .resume-header {
-    background-color: #e0f0ff;
+	background-color: white;
 }
 
 .resume-main {
-	background-color: #fffefc;
+	background-color: white;
+	border-top: 2px solid #D97373;
 }
 
 .resume-aside {
-	background-color: #fff0e0;
+	background-color: white;
+	border-top: 2px solid #D97373;
+	border-left: 2px solid #D97373;
 }
 
 /* Styles for lists in the document */
@@ -48,4 +101,23 @@ body {
 .contact-icon {
 	height: 1em;
 	flex-basis: 1.4em;
+}
+
+/* Styles progress bar */
+
+.language-progress {
+	background-color: #F28972;
+	color: #731212;
+	
+}
+
+.border-2 {
+	border: 3px solid #400909 !important;
+}
+
+/* styled for lists */
+
+.my-bullets {
+	list-style-type: circle;
+	list-style-position: inside;
 }
